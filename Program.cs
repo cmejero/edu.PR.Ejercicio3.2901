@@ -12,10 +12,8 @@
             Random rd = new Random();
 
             int aniosAleatorio = rd.Next(0,5);
-            fechaModificada = fechaActual.AddDays(1); 
-            fechaModificada = fechaActual.AddMonths(-24);
-            fechaModificada = fechaActual.AddYears(aniosAleatorio);
-
+            fechaModificada = fechaActual.AddDays(1).AddMonths(-24).AddYears(aniosAleatorio);
+            
             Console.WriteLine(fechaModificada.ToString());
 
             if(fechaActual>fechaModificada)
